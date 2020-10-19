@@ -25,7 +25,7 @@
 		#This is for CyberGISX. Uncomment two command lines below when you run in CyberGIX Environment
 		#local_dir1 = servers1 + cwd \
 		#local_dir2 = servers2 + cwd
-```bash   
+```   
     in the python code below:\
      PYTHON_Quantitative_Data_VIZ/Adaptive_Choropleth_Mapper.py 
      PYTHON_Categorical_Data_VIZ/Qualitative_Analysis_Mapper.py   
