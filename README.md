@@ -17,14 +17,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PYTHON_Categorical_Data_VIZ/Qualitative_Analysis_Mapper.ipynb
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PYTHON_Categorical_Data_VIZ/Neighborhood_Analysis_Mapper.ipynb
 ## CyberGISX
-&nbsp;&nbsp;&nbsp;&nbsp; You can run apLinksPlot_PYTHON in your Jupyter Notebook installed in your PC as well as in CyberGISX. To use it in CyberGISX, follow steps below:
+&nbsp;&nbsp;&nbsp;&nbsp;You can run apLinksPlot_PYTHON in your Jupyter Notebook installed in your PC as well as in CyberGISX. &nbsp;&nbsp;&nbsp;&nbsp;To use it in CyberGISX, follow steps below:
 1. Create a CyberGISX account, if you have not one, yet
 2. Follow insturctions in Install_geosnap.ipynb.
 3. Uncommend out the code below  
 &nbsp;&nbsp;&nbsp;&nbsp;#This is for CyberGISX. Uncomment two command lines below when you run in CyberGIX Environment
-&nbsp;&nbsp;&nbsp;&nbsp;#local_dir1 = servers1 + cwd
+&nbsp;&nbsp;&nbsp;&nbsp;#local_dir1 = servers1 + cwd \n
 &nbsp;&nbsp;&nbsp;&nbsp;#local_dir2 = servers2 + cwd   
-    in the python code below:
+    in the python code below:\n
      PYTHON_Quantitative_Data_VIZ/Adaptive_Choropleth_Mapper.py 
      PYTHON_Categorical_Data_VIZ/Qualitative_Analysis_Mapper.py   
      PYTHON_Categorical_Data_VIZ/Neighborhood_Analysis_Mapper.ipynb
