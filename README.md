@@ -19,7 +19,7 @@
 ## CyberGISX
 &nbsp;&nbsp;&nbsp;&nbsp;You can run LinksPlot_PYTHON in your Jupyter Notebook installed in your PC as well as in CyberGISX.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;To use it in CyberGISX, follow steps below:
-1. If you do not have a CyerGISX account, create a CyberGISX an acount with yor github id at https://cybergisxhub.cigi.illinois.edu/
+1. If you do not have a CyerGISX account, create a CyberGISX an acount with yor github id at https://cybergisxhub.cigi.illinois.edu
 2. Follow insturctions in Install_geosnap.ipynb.
 3. Uncommend out the code below
 
