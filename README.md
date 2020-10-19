@@ -19,9 +19,9 @@
 ## CyberGISX
 &nbsp;&nbsp;&nbsp;&nbsp;You can run LinksPlot_PYTHON in your Jupyter Notebook installed in your PC as well as in CyberGISX.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;To use it in CyberGISX, follow steps below:
-1. If you do not have a CyerGISX account, create a CyberGISX an acount with yor github id at https://cybergisxhub.cigi.illinois.edu
+1. If you do not have a CyerGISX account, create a CyberGISX an account with your GitHub id at https://cybergisxhub.cigi.illinois.edu
 2. Follow insturctions in Install_geosnap.ipynb.
-3. Uncommend out the code below
+3. Uncomment out the code below
 
 ```bash  
 	#This is for CyberGISX. Uncomment two command lines below when you run in CyberGIX Environment
@@ -43,7 +43,7 @@ To be updated...
 
 ## Authors
 
-MapLinksPlot originally developed by Su Yeon Han, Sergio Rey, Elijah Knaap, Wei Kang and other members at Center for Geospatial Sciences at University of California, Riverside. More update will be made by others.
+MapLinksPlot originally developed by Su Yeon Han, Sergio Rey, Elijah Knaap, Wei Kang, and other members at the Center for Geospatial Sciences at the University of California, Riverside. More updates will be made by others.
 
 ## License
 
@@ -53,5 +53,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 <img src="images/nsf_logo.jpg" width=100 /> This project is supported by NSF Award #1733705,
 [Neighborhoods in Space-Time Contexts](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1733705&HistoricalAwards=false)
+
 
 
