@@ -6,7 +6,7 @@
 
 <h2 align="center" style="margin-top:-10px">MapLinksPlot is an an open-source JavaScript-based mapping tool that enables linking multiple maps and various charts.</h2> 
 
-## A Quick Guide
+## A Quick Start
 ### MapLinksPlot_JS
 &nbsp;&nbsp;&nbsp;&nbsp;For Javascript users, example visaulizations are available in the two folders below:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JS_Quantitative_Data_VIZ<br/>
@@ -20,8 +20,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;You can run LinksPlot_PYTHON in your Jupyter Notebook installed in your PC as well as in CyberGISX.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;To use it in CyberGISX, follow steps below:
 1. If you do not have a CyerGISX account, create a CyberGISX an account with your GitHub id at https://cybergisxhub.cigi.illinois.edu
-2. Follow insturctions in Install_geosnap.ipynb.
-3. Uncomment out the code below
+2. Open up the CyberGIX, click the "new" button on the top right corner, and select python3 and enter the command line below to download MapLinksPlot.
+```bash
+	!git clone https://github.com/suhanmappingideas/MapLinksPlot
+```    
+3. Follow insturctions in Install_geosnap.ipynb.
+4. Uncomment out the code below:
 
 ```bash  
 	#This is for CyberGISX. Uncomment two command lines below when you run in CyberGIX Environment
@@ -31,9 +35,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;in the python code below: <br/>
 
 ```bash  
-PYTHON_Quantitative_Data_VIZ/Adaptive_Choropleth_Mapper.py 
-PYTHON_Quantitative_Data_VIZ/Qualitative_Analysis_Mapper.py  
-PYTHON_Categorical_Data_VIZ/Neighborhood_Analysis_Mapper.ipynb
+	PYTHON_Quantitative_Data_VIZ/Adaptive_Choropleth_Mapper.py 
+	PYTHON_Quantitative_Data_VIZ/Qualitative_Analysis_Mapper.py  
+	PYTHON_Categorical_Data_VIZ/Neighborhood_Analysis_Mapper.ipynb
 ``` 
  
 ## Visualization Modules
