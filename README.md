@@ -20,8 +20,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;You can run LinksPlot_PYTHON in your Jupyter Notebook installed in your PC as well as in CyberGISX.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;To use it in CyberGISX, follow steps below:
 1. If you do not have a CyerGISX account, create a CyberGISX an account with your GitHub id at https://cybergisxhub.cigi.illinois.edu
-2. Follow insturctions in Install_geosnap.ipynb.
-3. Uncomment out the code below
+2. Open up the CyberGIX, click the "new" button on the top right corner, and select python3 and enter the command line below to download MapLinksPlot.
+```bash
+	!git clone https://github.com/suhanmappingideas/MapLinksPlot
+```    
+3. Follow insturctions in Install_geosnap.ipynb.
+4. Uncomment out the code below:
 
 ```bash  
 	#This is for CyberGISX. Uncomment two command lines below when you run in CyberGIX Environment
