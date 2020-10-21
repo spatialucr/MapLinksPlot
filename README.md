@@ -17,7 +17,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PYTHON_Categorical_Data_VIZ/Qualitative_Analysis_Mapper.ipynb
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PYTHON_Categorical_Data_VIZ/Neighborhood_Analysis_Mapper.ipynb
 ## CyberGISX
-&nbsp;&nbsp;&nbsp;&nbsp;You can run LinksPlot_PYTHON in your Jupyter Notebook installed in your PC as well as in CyberGISX.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;You can run LinksPlot_PYTHON in your Jupyter Notebook installed in your PC as well as in CybearGISX.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;To use it in CyberGISX, follow steps below:
 1. If you do not have a CyerGISX account, create a CyberGISX an account with your GitHub id at https://cybergisxhub.cigi.illinois.edu
 2. Open up the CyberGIX, click the "new" button on the top right corner, and select python3 and enter the command line below to download MapLinksPlot.
@@ -51,7 +51,8 @@ To be updated...
 
 ## Authors
 
-MapLinksPlot originally developed by Su Yeon Han, Sergio Rey, Elijah Knaap, Wei Kang, and other members at the Center for Geospatial Sciences at the University of California, Riverside, and also updated by members at the CyberGIS Center.
+MapLinksPlot was originally developed by Su Yeon Han, Sergio Rey, Elijah Knaap, Wei Kang, and other members at the Center for Geospatial Sciences at the University of California, Riverside, and is also updated by members at the CyberGIS Center.
+
 
 ## License
 
@@ -60,8 +61,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Funding
 
 <img src="images/nsf_logo.jpg" width=100 /> This project was supported by NSF Award #1733705,
-[Neighborhoods in Space-Time Contexts](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1733705&HistoricalAwards=false) and currenty supported by NSF Award #1743184,
-[SI2-S2I2 Conceptualization: Geospatial Software Institute]. Any opinions, findings, and conclusions or recommendations expressed on the site are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+[Neighborhoods in Space-Time Contexts](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1733705&HistoricalAwards=false) and is currenty supported by NSF Award #1743184,
+[SI2-S2I2 Conceptualization: Geospatial Software Institute](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1743184). Any opinions, findings, and conclusions or recommendations expressed on the site are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+
 
 
 

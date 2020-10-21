@@ -1850,9 +1850,10 @@ $( document ).ready(function() {
 	}
 	//console.log("app.Index_of_neighborhood_change:", app.Index_of_neighborhood_change);
 
+
 	// set draw neighborhood maps or not to global variable
-	if (typeof Maps_of_neighborhood !== 'undefined' && typeof Maps_of_neighborhood === 'boolean') {
-		app.Maps_of_neighborhood = Maps_of_neighborhood;
+	if (typeof Maps_of_Categorical_Data !== 'undefined' && typeof Maps_of_Categorical_Data === 'boolean') {
+		app.Maps_of_neighborhood = Maps_of_Categorical_Data;
 	}
 	//console.log("app.Maps_of_neighborhood:", app.Maps_of_neighborhood);
 
@@ -1875,20 +1876,20 @@ $( document ).ready(function() {
 	//console.log("app.Distribution_INC2_different_cluster:", app.Distribution_INC2_different_cluster);
 
 	// set draw stacked area chart or not to global variable
-	if (typeof Temporal_change_in_neighborhoods !== 'undefined' && typeof Temporal_change_in_neighborhoods === 'boolean') {
-		app.Temporal_change_in_neighborhoods = Temporal_change_in_neighborhoods;
+	if (typeof Temporal_change !== 'undefined' && typeof Temporal_change === 'boolean') {
+		app.Temporal_change_in_neighborhoods = Temporal_change;
 	}
-	//console.log("app.Temporal_change_in_neighborhoods:", app.Temporal_change_in_neighborhoods);
+	//console.log("app.Temporal_change:", app.Temporal_change);
 
 	// set draw chord diagram or not to global variable
-	if (typeof Chord_Diagram_in_neighborhoods !== 'undefined' && typeof Chord_Diagram_in_neighborhoods === 'boolean') {
-		app.Chord_Diagram_in_neighborhoods = Chord_Diagram_in_neighborhoods;
+	if (typeof Chord_Diagram !== 'undefined' && typeof Chord_Diagram === 'boolean') {
+		app.Chord_Diagram_in_neighborhoods = Chord_Diagram;
 	}
 
 	// set draw parallel categories diagram or not to global variable
-	if (typeof Parallel_Categories_Diagram_in_neighborhoods !== 'undefined' &&
-		typeof Parallel_Categories_Diagram_in_neighborhoods === 'boolean') {
-		app.Parallel_Categories_Diagram_in_neighborhoods = Parallel_Categories_Diagram_in_neighborhoods;
+	if (typeof Parallel_Categories_Diagram !== 'undefined' &&
+		typeof Parallel_Categories_Diagram === 'boolean') {
+		app.Parallel_Categories_Diagram_in_neighborhoods = Parallel_Categories_Diagram;
 	}
 
 	// set number of decimal places to global variable

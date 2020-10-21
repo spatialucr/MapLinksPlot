@@ -186,10 +186,6 @@ var app={
 	map4: {map: null, bounds: null, geojson: null, info: null, legend: null, layers: null, layerscontrol:null, lastHighlightedTractid: null, classification: null, item: null, items: null, zIntervals: null, mIntervals: null, nPolygonbyClass: [], densityChart: {minX: null, maxX: null, minY: null, maxY: null}},
 	map5: {map: null, bounds: null, geojson: null, info: null, legend: null, layers: null, layerscontrol:null, lastHighlightedTractid: null, classification: null, item: null, items: null, zIntervals: null, mIntervals: null, nPolygonbyClass: [], densityChart: {minX: null, maxX: null, minY: null, maxY: null}},
 
-	colorGradient: ["#a6cee3","#1f78b4","#b2df8a","#33a02c","#fb9a99","#e31a1c","#fdbf6f","#ff7f00",
-					"#cab2d6","#6a3d9a","#ffff99","#b15928","#8dd3c7","#ffffb3","#bebada","#fb8072",
-					"#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"],
-
 	//Antique:"#D9AF6B","#855C75","#AF6458","#736F4C","#526A83","#625377","#68855C","#9C9C5E","#A06177","#8C785D","#467378","#7C7C7C"
 	//pastel:"#8dd3c7","#ffffb3","#bebada","#fb8072","#80b1d3","#fdb462","#b3de69","#fccde5","#d9d9d9","#bc80bd","#ccebc5","#ffed6f"
 
@@ -1395,7 +1391,8 @@ function ACSdata_render(mIDX) {
 			this._div.innerHTML = '<h4></h4>' +  (props ?
 				'<b>' + ' ' + vstring + '</b> &nbsp; ' + c + '<br/>'
 				+ (geoname ? geoname + '<br/>' : '')
-				+ 'geoid : ' + props[app.geokey]
+				//+ 'geoid : ' + props[app.geokey]
+				+ app.geokey +': ' + props[app.geokey]                                                  
 				: 'Hover over an area');
 		};
 		app[mIDX].info.addTo(map);
@@ -1867,10 +1864,11 @@ $( document ).ready(function() {
 	//console.log("app.Index_of_neighborhood_change:", app.Index_of_neighborhood_change);
 
 	// set draw neighborhood maps or not to global variable
-	if (typeof Maps_of_neighborhood !== 'undefined' && typeof Maps_of_neighborhood === 'boolean') {
-		app.Maps_of_neighborhood = Maps_of_neighborhood;
+	if (typeof Maps_of_Categorical_Data !== 'undefined' && typeof Maps_of_Categorical_Data === 'boolean') {
+		app.Maps_of_neighborhood = Maps_of_Categorical_Data;
 	}
 	//console.log("app.Maps_of_neighborhood:", app.Maps_of_neighborhood);
+
 
 	// set draw INC distribution chart or not to global variable
 	if (typeof Distribution_INC1 !=='undefined' && typeof Distribution_INC1 ==='boolean') {
@@ -1891,20 +1889,20 @@ $( document ).ready(function() {
 	//console.log("app.Distribution_INC2_different_cluster:", app.Distribution_INC2_different_cluster);
 
 	// set draw stacked area chart or not to global variable
-	if (typeof Temporal_change_in_neighborhoods !== 'undefined' && typeof Temporal_change_in_neighborhoods === 'boolean') {
-		app.Temporal_change_in_neighborhoods = Temporal_change_in_neighborhoods;
+	if (typeof Stacked_Chart !== 'undefined' && typeof Stacked_Chart === 'boolean') {
+		app.Temporal_change_in_neighborhoods = Stacked_Chart;
 	}
-	//console.log("app.Temporal_change_in_neighborhoods:", app.Temporal_change_in_neighborhoods);
+	//console.log("app.Temporal_change:", app.Temporal_change);
 
 	// set draw chord diagram or not to global variable
-	if (typeof Chord_Diagram_in_neighborhoods !== 'undefined' && typeof Chord_Diagram_in_neighborhoods === 'boolean') {
-		app.Chord_Diagram_in_neighborhoods = Chord_Diagram_in_neighborhoods;
+	if (typeof Chord_Diagram !== 'undefined' && typeof Chord_Diagram === 'boolean') {
+		app.Chord_Diagram_in_neighborhoods = Chord_Diagram;
 	}
 
 	// set draw parallel categories diagram or not to global variable
-	if (typeof Parallel_Categories_Diagram_in_neighborhoods !== 'undefined' &&
-		typeof Parallel_Categories_Diagram_in_neighborhoods === 'boolean') {
-		app.Parallel_Categories_Diagram_in_neighborhoods = Parallel_Categories_Diagram_in_neighborhoods;
+	if (typeof Parallel_Categories_Diagram !== 'undefined' &&
+		typeof Parallel_Categories_Diagram === 'boolean') {
+		app.Parallel_Categories_Diagram_in_neighborhoods = Parallel_Categories_Diagram;
 	}
 
 	// set number of decimal places to global variable
