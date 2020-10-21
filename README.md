@@ -6,7 +6,7 @@
 
 <h2 align="center" style="margin-top:-10px">MapLinksPlot is an an open-source JavaScript-based mapping tool that enables linking multiple maps and various charts.</h2> 
 
-## A Quick Start
+## QuickStart
 ### MapLinksPlot_JS
 &nbsp;&nbsp;&nbsp;&nbsp;For Javascript users, example visaulizations are available in the two folders below:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JS_Quantitative_Data_VIZ<br/>
@@ -51,7 +51,7 @@ To be updated...
 
 ## Authors
 
-MapLinksPlot originally developed by Su Yeon Han, Sergio Rey, Elijah Knaap, Wei Kang, and other members at the Center for Geospatial Sciences at the University of California, Riverside. More updates will be made by others.
+MapLinksPlot originally developed by Su Yeon Han, Sergio Rey, Elijah Knaap, Wei Kang, and other members at the Center for Geospatial Sciences at the University of California, Riverside, and also updated by members at the CyberGIS Center.
 
 ## License
 
@@ -59,8 +59,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Funding
 
-<img src="images/nsf_logo.jpg" width=100 /> This project is supported by NSF Award #1733705,
-[Neighborhoods in Space-Time Contexts](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1733705&HistoricalAwards=false)
+<img src="images/nsf_logo.jpg" width=100 /> This project was supported by NSF Award #1733705,
+[Neighborhoods in Space-Time Contexts](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1733705&HistoricalAwards=false) and currenty supported by NSF Award #1743184,
+[SI2-S2I2 Conceptualization: Geospatial Software Institute]. Any opinions, findings, and conclusions or recommendations expressed on the site are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
 
 
 
