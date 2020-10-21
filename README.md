@@ -51,7 +51,7 @@ To be updated...
 
 ## Authors
 
-MapLinksPlot originally developed by Su Yeon Han, Sergio Rey, Elijah Knaap, Wei Kang, and other members at the Center for Geospatial Sciences at the University of California, Riverside, and also updated by members at the CyberGIS Center.
+MapLinksPlot originally developed by Su Yeon Han, Sergio Rey, Elijah Knaap, Wei Kang, and other members at the Center for Geospatial Sciences at the University of California, Riverside, and is also updated by members at the CyberGIS Center.
 
 ## License
 
