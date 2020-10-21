@@ -53,6 +53,7 @@ To be updated...
 
 MapLinksPlot was originally developed by Su Yeon Han, Sergio Rey, Elijah Knaap, Wei Kang, and other members at the Center for Geospatial Sciences at the University of California, Riverside, and is also updated by members at the CyberGIS Center.
 
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
@@ -62,6 +63,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 <img src="images/nsf_logo.jpg" width=100 /> This project was supported by NSF Award #1733705,
 [Neighborhoods in Space-Time Contexts](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1733705&HistoricalAwards=false) and is currenty supported by NSF Award #1743184,
 [SI2-S2I2 Conceptualization: Geospatial Software Institute](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1743184). Any opinions, findings, and conclusions or recommendations expressed on the site are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+
 
 
 

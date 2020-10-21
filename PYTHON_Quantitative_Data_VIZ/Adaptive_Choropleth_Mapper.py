@@ -349,7 +349,7 @@ def Adaptive_Choropleth_Mapper_viz(param):
     local_dir1 = cwd
     local_dir2 = cwd  
     
-    # This is for CyberGISX. Uncomment two command lines below when you run in CyberGIX Environment
+    #This is for CyberGISX. Uncomment two command lines below when you run in CyberGIX Environment
     #local_dir1 = servers1 + cwd
     #local_dir2 = servers2 + cwd    
     
