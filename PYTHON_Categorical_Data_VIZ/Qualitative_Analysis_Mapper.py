@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 import json, math, copy, sys
+from geosnap.io import store_ltdb
+from geosnap import Community, datasets
+from geosnap.io import store_census
 import pandas as pd
 import shapely.wkt
 import shapely.geometry
@@ -81,16 +84,16 @@ def write_CONFIG_js(param):
     contents = ifile.read()
     
     SubjectName = "";
-    Maps_of_neighborhood = True;               
-    Temporal_change_in_neighborhoods = True;
-    Parallel_Categories_Diagram_in_neighborhoods = True;
-    Chord_Diagram_in_neighborhoods = True;
+    Maps_of_Categorical_Data = True;               
+    Stacked_Chart = True;
+    Parallel_Categories_Diagram = True;
+    Chord_Diagram = True;
     
     if ('subject' in param): SubjectName =  param['subject']
-    if ('Maps_of_neighborhood' in param): Maps_of_neighborhood =  param['Maps_of_neighborhood']
-    if ('Temporal_change_in_neighborhoods' in param): Temporal_change_in_neighborhoods =  param['Temporal_change_in_neighborhoods']
-    if ('Parallel_Categories_Diagram_in_neighborhoods' in param): Parallel_Categories_Diagram_in_neighborhoods =  param['Parallel_Categories_Diagram_in_neighborhoods']
-    if ('Chord_Diagram_in_neighborhoods' in param): Chord_Diagram_in_neighborhoods =  param['Chord_Diagram_in_neighborhoods']
+    if ('Maps_of_Categorical_Data' in param): Maps_of_Categorical_Data =  param['Maps_of_Categorical_Data']
+    if ('Stacked_Chart' in param): Stacked_Chart =  param['Stacked_Chart']
+    if ('Parallel_Categories_Diagram' in param): Parallel_Categories_Diagram =  param['Parallel_Categories_Diagram']
+    if ('Chord_Diagram' in param): Chord_Diagram =  param['Chord_Diagram']
     
     InitialLayers = []
     if (len(param['Layers']) <= 1): InitialLayers = []
@@ -123,19 +126,19 @@ def write_CONFIG_js(param):
     # replace newly computed "NumOfMaps", "InitialLayers", "Map_width", "Map_height" in CONFIG.js. See the example replacement below
     InitialLayers = "var InitialLayers = " + json.dumps(InitialLayers) + ";"
     SubjectName = 'var SubjectName = "' + SubjectName + '";'
-    Maps_of_neighborhood = "var Maps_of_neighborhood = " + json.dumps(Maps_of_neighborhood)+ ";"
-    Temporal_change_in_neighborhoods = "var Temporal_change_in_neighborhoods = " + json.dumps(Temporal_change_in_neighborhoods)+ ";"
-    Parallel_Categories_Diagram_in_neighborhoods = "var Parallel_Categories_Diagram_in_neighborhoods = " + json.dumps(Parallel_Categories_Diagram_in_neighborhoods)+ ";"
-    Chord_Diagram_in_neighborhoods = "var Chord_Diagram_in_neighborhoods = " + json.dumps(Chord_Diagram_in_neighborhoods)+ ";"
+    Maps_of_Categorical_Data = "var Maps_of_Categorical_Data = " + json.dumps(Maps_of_Categorical_Data)+ ";"
+    Stacked_Chart = "var Stacked_Chart = " + json.dumps(Stacked_Chart)+ ";"
+    Parallel_Categories_Diagram = "var Parallel_Categories_Diagram = " + json.dumps(Parallel_Categories_Diagram)+ ";"
+    Chord_Diagram = "var Chord_Diagram = " + json.dumps(Chord_Diagram)+ ";"
     Map_width = 'var Map_width  = "' + Map_width + '";'
     Map_height = 'var Map_height = "' + Map_height + '";'
     
     contents = contents.replace("var InitialLayers = [];", InitialLayers)
     contents = contents.replace('var SubjectName = "";', SubjectName)
-    contents = contents.replace("var Maps_of_neighborhood = true;", Maps_of_neighborhood)
-    contents = contents.replace("var Temporal_change_in_neighborhoods = true;", Temporal_change_in_neighborhoods)
-    contents = contents.replace("var Parallel_Categories_Diagram_in_neighborhoods = true;", Parallel_Categories_Diagram_in_neighborhoods)
-    contents = contents.replace("var Chord_Diagram_in_neighborhoods = true;", Chord_Diagram_in_neighborhoods)
+    contents = contents.replace("var Maps_of_Categorical_Data = true;", Maps_of_Categorical_Data)
+    contents = contents.replace("var Stacked_Chart = true;", Stacked_Chart)
+    contents = contents.replace("var Parallel_Categories_Diagram = true;", Parallel_Categories_Diagram)
+    contents = contents.replace("var Chord_Diagram = true;", Chord_Diagram)
     contents = contents.replace('var Map_width  = "400px";', Map_width)
     contents = contents.replace('var Map_height = "400px";', Map_height)
     
@@ -238,10 +241,10 @@ if __name__ == '__main__':
         'Layers': [1980,1990,2000, 2010],
         'inputCSV': input_attributes,   
         'shapefile': shapefile, 
-        'Maps_of_neighborhood': True,                #choropleth map: Maps representing clustering result		
-        'Temporal_change_in_neighborhoods': True,    #stacked chart: Temporal Change in Neighborhoods over years		
-        'Parallel_Categories_Diagram_in_neighborhoods': True,
-        'Chord_Diagram_in_neighborhoods': False
+        'Maps_of_Categorical_Data': True,                #choropleth map: Maps representing clustering result		
+        'Stacked_Chart': True,    #stacked chart: Temporal Change in Neighborhoods over years		
+        'Parallel_Categories_Diagram': True,
+        'Chord_Diagram': False
     }
     
     #Clustering_viz(param)
