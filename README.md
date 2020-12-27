@@ -69,7 +69,7 @@ Images below show visualizations that you can create using MapLinksPlot. Click t
         	        <ul><li> The Stacked Chart visualizes the temporal change </li></ul>    
         <img height=100px src="http://su-gis.iptime.org/MapLinksPlot/images/Qual_Stacked.PNG" alt="MapLinksPlot"/>
         <li>Qualitative_Analysis_Mapper with Parallel Categories Diagram</li>
-                	        <ul><li> Parallel Categories Diagram represent how the categorical data changes over time in quantity. <a href="https://plotly.com/javascript/parallel-categories-diagram">Click to see more info.</a></li></ul>    
+                	        <ul><li> Parallel Categories Diagram represents how the categorical data changes over time in quantity. <a href="https://plotly.com/javascript/parallel-categories-diagram">Click to see more info.</a></li></ul>    
       <img height=200px src="http://su-gis.iptime.org/MapLinksPlot/images/Qual_PCD.PNG" alt="MapLinksPlot"/>
         <li>Qualitative_Analysis_Mapper with Chord Diagram</li>
         <ul><li> The Chord Diagram quantifies changes of categorical data between the two periods </li></ul> 
