@@ -77,6 +77,29 @@ Images below show visualizations that you can create using MapLinksPlot. Click t
 </ul> 
 
 ## Tutorials
+<ul>
+
+<li><strong>Introduction to MapLinksPlot and Adpative Choropleth Mapper</strong>
+<video controls="controls" width="500" height="350">
+<source src="http://su-gis.iptime.org/MapLinksPlot/vidoes/Introduction_to_MapLinksPlot.mp4" type="video/mp4" /></video>
+</li>
+
+<li><strong>Additoinal Function of Adaptive Choropleth Mapper</strong>
+<video controls="controls" width="500" height="350">
+<source src="http://su-gis.iptime.org/MapLinksPlot/vidoes/ACM_additional_functions.mp4" type="video/mp4" /></video>
+</li>
+
+<li><strong>Introduction to CyberGISX</strong>
+: It covers how to access CyberGISX, how to install required libararies, and how to run Adaptive Choropleth Mapper in CyberGISX
+<video controls="controls" width="500" height="350">
+<source src="http://su-gis.iptime.org/MapLinksPlot/vidoes/Introduction to CyberGISX_and_installation.mp4" type="video/mp4" /></video>
+</li>
+<li><strong>Various Visualization Modules of MapLinksPlot</strong>
+<video controls="controls" width="500" height="350">
+<source src="http://su-gis.iptime.org/MapLinksPlot/vidoes/Other_Viz_Modules.mp4" type="video/mp4" /></video>
+</li>
+
+<ul>
 
 ## Built With
 
