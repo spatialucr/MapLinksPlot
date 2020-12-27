@@ -80,6 +80,7 @@ Images below show visualizations that you can create using MapLinksPlot. Click t
 <ul>
 
 <li><strong>Introduction to MapLinksPlot and Adpative Choropleth Mapper</strong>
+	[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
 <video controls="controls" width="500" height="350">
 <source src="http://su-gis.iptime.org/MapLinksPlot/vidoes/Introduction_to_MapLinksPlot.mp4" type="video/mp4" /></video>
 </li>
