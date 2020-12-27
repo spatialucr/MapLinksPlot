@@ -41,6 +41,7 @@
 ``` 
  
 ## Visualization Modules
+### Images below show visualizations that you can create using MapLinksPlot. Click the image to see full size.
 Quntitative Data Visualization
 <ul>
         <li>Adaptive Choropleth Mapper </li>
