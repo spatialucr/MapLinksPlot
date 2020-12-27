@@ -41,8 +41,10 @@
 ``` 
  
 ## Visualization Modules
-<p style="color:red">Images below show visualizations that you can create using MapLinksPlot. Click the image to see the full size.</p>
-### Quntitative Data Visualization
+<font color="green">
+Images below show visualizations that you can create using MapLinksPlot. Click the image to see the full size.</font >
+
+###  Quntitative Data Visualization
 <ul>
         <li>Adaptive Choropleth Mapper </li>
         <img height=100px src="http://su-gis.iptime.org/MapLinksPlot/images/ACM.PNG" alt="MapLinksPlot"/>
@@ -54,7 +56,8 @@
          <img height=200px src="http://su-gis.iptime.org/MapLinksPlot/images/ACM_PCP.PNG" alt="MapLinksPlot"/>
 </ul>     
              
-Categorical Data Visualization
+###  Categorical Data Visualization
+
 <ul>
         <li> </li>
 </ul> 
