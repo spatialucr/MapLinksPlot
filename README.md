@@ -46,11 +46,15 @@ Images below show visualizations that you can create using MapLinksPlot. Click t
 
 ###  Quntitative Data Visualization
 <ul>
-        <li>Adaptive Choropleth Mapper </li>
+        <li>Adaptive Choropleth Mapper (ACM)</li>
+        <ul><li> [Click to see more information.](http://su-gis.iptime.org/ACM) </li></ul>   
+        <li>Adaptive Choropleth Mapper with Stacked Chart
+	        <ul><li> The Stacked Chart visualizes the temporal change </li></ul>    
+       </li>    
         <img height=100px src="http://su-gis.iptime.org/MapLinksPlot/images/ACM.PNG" alt="MapLinksPlot"/>
         <li>Adaptive Choropelth Mapper with Correlogram</li>
         <img height=250px src="http://su-gis.iptime.org/MapLinksPlot/images/ACM_Correlogram.PNG" alt="MapLinksPlot"/>
-        <li>Adaptive Choropleth Mapper with Scatter</li>
+        <li>Adaptive Choropleth Mapper with Scatter Plot</li>
       <img height=150px src="http://su-gis.iptime.org/MapLinksPlot/images/ACM_Scatter.PNG" alt="MapLinksPlot"/>
         <li>Adaptive Choropleth Mapper with Parallel Coordinate Plot </li>
          <img height=200px src="http://su-gis.iptime.org/MapLinksPlot/images/ACM_PCP.PNG" alt="MapLinksPlot"/>
@@ -59,7 +63,17 @@ Images below show visualizations that you can create using MapLinksPlot. Click t
 ###  Categorical Data Visualization
 
 <ul>
-        <li> </li>
+        <li>Qualitative_Analysis_Mapper</li>
+        <img height=100px src="http://su-gis.iptime.org/MapLinksPlot/images/Qual.PNG" alt="MapLinksPlot"/>
+        <li>Qualitative_Analysis_Mapper with Stacked Chart</li>
+        	        <ul><li> The Stacked Chart visualizes the temporal change </li></ul>    
+        <img height=100px src="http://su-gis.iptime.org/MapLinksPlot/images/Qual_Stacked.PNG" alt="MapLinksPlot"/>
+        <li>Qualitative_Analysis_Mapper with Parallel Categories Diagram</li>
+                	        <ul><li> Parallel Categories Diagram represent how the categorical data changes over time in quantity. [Click to see more info](https://plotly.com/javascript/parallel-categories-diagram). </li></ul>    
+      <img height=200px src="http://su-gis.iptime.org/MapLinksPlot/images/Qual_PCD.PNG" alt="MapLinksPlot"/>
+        <li>Qualitative_Analysis_Mapper with Chord Diagram</li>
+        <ul><li> The Chord Diagram quantifies changes of categorical data between the two periods </li></ul> 
+         <img height=200px src="http://su-gis.iptime.org/MapLinksPlot/images/Qual_CD.PNG" alt="MapLinksPlot"/>
 </ul> 
 
 ## Tutorials
