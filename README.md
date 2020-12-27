@@ -99,7 +99,7 @@ Images below show visualizations that you can create using MapLinksPlot. Click t
 <source src="http://su-gis.iptime.org/MapLinksPlot/vidoes/Other_Viz_Modules.mp4" type="video/mp4" /></video>
 </li>
 
-<ul>
+</ul>
 
 ## Built With
 
