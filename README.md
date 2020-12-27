@@ -50,7 +50,7 @@ Quntitative Data Visualization
         <li>Adaptive Choropleth Mapper with Scatter</li>
       <img height=150 src="http://su-gis.iptime.org/MapLinksPlot/images/ACM_Scatter.PNG" alt="MapLinksPlot"/>
         <li>Adaptive Choropleth Mapper with Parallel Coordinate Plot </li>
-         <img height=200 src="http://su-gis.iptime.org/MapLinksPlot/images/http://su-gis.iptime.org/MapLinksPlot/images/ACM_PCP.PNG.PNG" alt="MapLinksPlot"/>
+         <img height=200 src="http://su-gis.iptime.org/MapLinksPlot/images/ACM_PCP.PNG.PNG" alt="MapLinksPlot"/>
 </ul>     
              
 Categorical Data Visualization
