@@ -1,7 +1,7 @@
 # MapLinksPlot
 
 <p align="center">
-<img height=100 src="images/logo.PNG" alt="geosnap"/>
+<img height=100 src="http://su-gis.iptime.org/MapLinksPlot/images/MapLinksPlot_logo.PNG" alt="MapLinksPlot"/>
 </p>
 
 <h2 align="center" style="margin-top:-10px">MapLinksPlot is an an open-source JavaScript-based mapping tool that enables linking multiple maps and various charts.</h2> 
@@ -41,7 +41,21 @@
 ``` 
  
 ## Visualization Modules
-To be updated...
+Quntitative Data Visualization
+<ul>
+        <li>Adaptive Choropleth Mapper</li>
+        <li>Adaptive Choropelth Mapper with Correlogram</li>
+        <li>Adaptive Choropleth Mapper with Scatter</li>
+        <li>Adaptive Choropleth Mapper with Parallel Coordinate Plot </li>
+</ul>     
+             
+Categorical Data Visualization
+<ul>
+        <li> </li>
+</ul> 
+
+## Tutorials
+
 ## Built With
 
 * [Leaflet](https://leafletjs.com) - Used to make maps
