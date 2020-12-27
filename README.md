@@ -80,7 +80,7 @@ Images below show visualizations that you can create using MapLinksPlot. Click t
 
 <!-- blank line -->
 <figure class="video_container">
-  <iframe src="https://www.youtube.com/embed/enMumwvLAug" frameborder="0" allowfullscreen="true"> </iframe>
+  <iframe src="http://su-gis.iptime.org/MapLinksPlot/vidoes/Introduction_to_MapLinksPlot.mp4" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 <!-- blank line -->
 
