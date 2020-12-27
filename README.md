@@ -43,10 +43,14 @@
 ## Visualization Modules
 Quntitative Data Visualization
 <ul>
-        <li>Adaptive Choropleth Mapper</li>
+        <li>Adaptive Choropleth Mapper </li>
+        <img height=100 src="http://su-gis.iptime.org/MapLinksPlot/images/ACM.PNG" alt="MapLinksPlot"/>
         <li>Adaptive Choropelth Mapper with Correlogram</li>
+        <img height=250 src="http://su-gis.iptime.org/MapLinksPlot/images/ACM_Correlogram.PNG" alt="MapLinksPlot"/>
         <li>Adaptive Choropleth Mapper with Scatter</li>
+      <img height=150 src="http://su-gis.iptime.org/MapLinksPlot/images/ACM_Scatter.PNG" alt="MapLinksPlot"/>
         <li>Adaptive Choropleth Mapper with Parallel Coordinate Plot </li>
+         <img height=200 src="http://su-gis.iptime.org/MapLinksPlot/images/http://su-gis.iptime.org/MapLinksPlot/images/ACM_PCP.PNG.PNG" alt="MapLinksPlot"/>
 </ul>     
              
 Categorical Data Visualization
