@@ -6,7 +6,7 @@ var InitialLayers = ["2018"];
 //var Initial_map_center = [34.0522, -117.9];  
 //var Initial_map_zoom_level = 8;   
 
-var Maps_of_Categorical_Data = "var Maps_of_Categorical_Data = true;";							//choropleth map: Maps representing categorical data 
+var Maps_of_Categorical_Data = true;							//choropleth map: Maps representing categorical data 
 var Stacked_Chart = false;				//stacked chart: Temporal Change
 var Parallel_Categories_Diagram = false;	//parallel categories diagram
 var Chord_Diagram = false;					//chord diagram

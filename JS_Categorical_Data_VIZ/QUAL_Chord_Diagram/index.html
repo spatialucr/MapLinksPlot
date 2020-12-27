@@ -265,7 +265,7 @@ function set_decoration_to_auto(mapN) {
 
 function draw_titlemap(mIDX, year) {
 	// set drop-down list of 'Year:'
-	var html_year = 'Year: <select name="yearSelect" onChange="year_change(\'' + mIDX + '\')">';
+	var html_year = ' <select name="yearSelect" onChange="year_change(\'' + mIDX + '\')">';
 	if (year == "INC")
 			html_year += '<option value="INC" class="line_none">INC</option>';
 	else {
@@ -484,7 +484,7 @@ function draw_titleParcats(mapN=null) {
 
 function draw_titleChart(dIDX, year) {
 	// set drop-down list of 'Year:'
-	var html_year = 'Year: <select name="yearSelect" onChange="year_change(\'' + dIDX + '\')">';
+	var html_year = ' <select name="yearSelect" onChange="year_change(\'' + dIDX + '\')">';
 	if (year == "INC")
 			html_year += '<option value="INC" class="line_none">INC</option>';
 	else {
@@ -562,7 +562,7 @@ function draw_titleChart(dIDX, year) {
 }
 
 function draw_titleGraphC(graphC, year) {
-	var html_year = 'Year: <select name="yearSelectGraphC" onChange="year_change_graphC(\'' + graphC + '\')">';
+	var html_year = ' <select name="yearSelectGraphC" onChange="year_change_graphC(\'' + graphC + '\')">';
 	for (var i=0; i<app.g; i++) {
 		html_year += '<option value="'+app.gYears[i]+'" class="line_none">'+app.gYears[i]+'</option>';
 	}
@@ -812,7 +812,7 @@ function updateGloballyButton() {
 
 // draw global selection menu
 function draw_globalSelection() {
-	var html_year = 'Year: <select name="globalYear" style="color:red;">' +
+	var html_year = ' <select name="globalYear" style="color:red;">' +
 					'<option value="none" class="line_none">No Select</option>' +
 					'<option value="each" class="line_none" selected>each</option>';
 	for (var i=1; i<app.m; i++) {

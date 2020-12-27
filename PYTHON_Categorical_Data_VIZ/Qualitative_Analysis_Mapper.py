@@ -96,8 +96,8 @@ def write_CONFIG_js(param):
     if ('Chord_Diagram' in param): Chord_Diagram =  param['Chord_Diagram']
     
     InitialLayers = []
-    if (len(param['Layers']) <= 1): InitialLayers = []
-    for i, year in enumerate(param['Layers']):
+    if (len(param['layers']) <= 1): InitialLayers = []
+    for i, year in enumerate(param['layers']):
         InitialLayers.append(str(year))
 
     NumOfMaps = len(InitialLayers)
@@ -238,7 +238,7 @@ if __name__ == '__main__':
         'title': "Neighborhood, Cook County (tract level)",
         'subject': "NEIGHBORHOOD",
         'filename_suffix': "Cook_2018_from_ACS_tract_from_file", 
-        'Layers': [1980,1990,2000, 2010],
+        'layers': [1980,1990,2000, 2010],
         'inputCSV': input_attributes,   
         'shapefile': shapefile, 
         'Maps_of_Categorical_Data': True,                #choropleth map: Maps representing clustering result		

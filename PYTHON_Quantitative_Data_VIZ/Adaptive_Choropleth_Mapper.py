@@ -243,8 +243,10 @@ def Adaptive_Choropleth_Mapper_viz(param):
     
     # convert year, variable to years, variables in the param
     if ('years' not in param and 'year' in param): param['years'] = [param['year']]
+    if ('years' not in param and 'year' not in param and 'periods' in param): param['years'] = param['periods']
+    if ('years' not in param and 'year' not in param and 'periods' not in param and 'period' in param): param['years'] = [param['period']]
     if ('variables' not in param and 'variable' in param): param['variables'] = [param['variable']]
-    #print(param)
+    #print(param['years'])
     
     # select community by state_fips, msa_fips, county_fips
     community = None
@@ -297,6 +299,8 @@ def Adaptive_Choropleth_Mapper_viz(param):
         #else:
         if(("geometry" in community.gdf) == False):
             community.gdf.insert(len(community.gdf.columns), "geometry", geometry)
+        community.gdf.rename(columns={'period':'year'}, inplace=True)
+        #print(community.gdf)
 ################################################################################################################      
     
     community.gdf = community.gdf.replace([np.inf, -np.inf], np.nan)
@@ -377,8 +381,73 @@ if __name__ == '__main__':
     #store_ltdb(sample=sample, fullcount=full)
     #store_census()
     #geosnap.io.store_census()
-    
+
+    input_attributes = pd.read_csv("attributes/Chicago_1980_1990_2000_2010.csv", dtype={'geoid':str})
+    input_attributes = input_attributes.rename(columns={'geoid': 'tractID'})
+    shapefile = gpd.read_file("shp/Cook_County_Tract.shp")
+    shapefile = shapefile.rename(columns={'GEOID10': 'tractID'})
+
     param = {
+        'title': "Adaptive Choropleth Mapper with Scatter Plot",
+        'filename_suffix': "Chicago_ACM_Scatter",
+        'inputCSV': input_attributes,   
+        'shapefile': shapefile, 
+        'year': 2000,
+        'label': "short_name", #Pick variable,short_name,full_name from template/conversion_table_codebook.csv         
+        'variables': [         #enter variable names of the column you selected above.
+            "p_nonhisp_white_persons",
+            "p_nonhisp_black_persons",
+            "p_hispanic_persons",
+            "p_asian_persons",
+            "p_foreign_born_pop",
+            "p_edu_college_greater",
+            "p_unemployment_rate",
+            "p_employed_manufacturing",
+            "p_poverty_rate",
+            "p_vacant_housing_units",
+            "p_owner_occupied_units",
+            "p_housing_units_multiunit_structures",
+            "median_home_value",
+            "p_structures_30_old",
+            "p_household_recent_move",
+            "p_persons_under_18",
+            "p_persons_over_60",     
+        ],
+        'chart': "Scatter Plot", 
+    }
+    
+    input_attributes = pd.read_csv("attributes/Chicago_1980_1990_2000_2010.csv", dtype={'geoid':str})
+    input_attributes = input_attributes.rename(columns={'geoid': 'tractID'})
+    shapefile = gpd.read_file("shp/Cook_County_Tract.shp")
+    shapefile = shapefile.rename(columns={'GEOID10': 'tractID'})
+
+    param1 = {
+        'title': "Adaptive Choropleth Mapper with Correlogram",
+        'filename_suffix': "Chicago_ACM_Correlogram",
+        'inputCSV': input_attributes,   
+        'shapefile': shapefile,
+        'period': 2010,
+        'NumOfMaps': 4,    
+        'label': "short_name", #Pick variable,short_name,full_name from template/conversion_table_codebook.csv         
+        'variables': [         #enter variable names of the column you selected above.
+            "p_nonhisp_white_persons",
+            "p_nonhisp_black_persons",
+            "p_hispanic_persons",
+            "p_asian_persons",          
+            "p_other_language",
+            "p_female_headed_families",
+            "median_income_blackhh",
+            "median_income_hispanichh",
+            "median_income_asianhh",
+            "per_capita_income",     
+        ],
+        'chart': "Correlogram", 
+    }
+    
+    input_attributes = pd.read_csv("attributes/Copy of San_Diego_ACS_2010.csv", dtype={'geoid':str})
+    shapefile = gpd.read_file("shp/San_Diego2010.shp")
+    
+    param2 = {
             'title': "Adaptive Choropleth Mapper with Correlogram",
             'filename_suffix': "SD_correlogram",
             'state_fips': None,
@@ -400,7 +469,7 @@ if __name__ == '__main__':
     input_attributes = pd.read_csv("attributes/Copy of San_Diego_ACS_2010.csv", dtype={'geoid':str})
     shapefile = gpd.read_file("shp/San_Diego2010.shp")
 
-    param2 = {
+    param3 = {
             'title': "Adaptive Choropleth Mapper with Correlogram",
             'filename_suffix': "SD_correlogram_from_csv",
             'inputCSV': input_attributes,   
@@ -422,7 +491,7 @@ if __name__ == '__main__':
             #'chart': "Parallel Coordinates Plot",       
     }
     
-    Adaptive_Choropleth_Mapper_viz(param2)
+    Adaptive_Choropleth_Mapper_viz(param)
     
     ended_datetime = datetime.now()
     elapsed = ended_datetime - started_datetime
